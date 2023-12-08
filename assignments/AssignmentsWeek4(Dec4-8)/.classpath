@@ -7,5 +7,6 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="Thursday-Custom-Exception"/>
+	<classpathentry kind="src" path="Friday-ArrayList"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
