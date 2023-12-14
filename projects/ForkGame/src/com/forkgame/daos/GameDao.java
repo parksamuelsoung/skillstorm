@@ -7,7 +7,7 @@ import com.forkgame.models.Game;
 
 public class GameDao {
 	
-	GameTable gameTable = new GameTable();
+	private GameTable gameTable = new GameTable();
 	
 	public ArrayList<Game> getGames() {
 		return gameTable.getGames();

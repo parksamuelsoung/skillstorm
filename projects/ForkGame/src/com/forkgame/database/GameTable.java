@@ -7,7 +7,7 @@ import com.forkgame.models.Game;
 
 public class GameTable {
 	
-	ArrayList<Game> game = new ArrayList<>();
+	private ArrayList<Game> game = new ArrayList<>();
 	
 	{
 		Collections.addAll(game,
