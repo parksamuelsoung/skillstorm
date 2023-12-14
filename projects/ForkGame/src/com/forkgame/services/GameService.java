@@ -50,6 +50,7 @@ public class GameService {
 	public void endGame() {			
 		System.out.print("Please enter your name: ");
 		player.setPlayerName(scanner.nextLine());
+		System.out.println(player);
 		System.out.println(playerController.updatePlayers(player));
 	}
 	
