@@ -6,6 +6,7 @@ import com.forkgame.models.Player;
 import com.forkgame.models.Scene;
 import com.forkgame.models.Game;
 import com.forkgame.controllers.PlayerController;
+import com.forkgame.controllers.ReviewController;
 import com.forkgame.controllers.SceneController;
 import com.forkgame.daos.GameDao;
 
@@ -13,6 +14,7 @@ public class GameService {
 	
 	private GameDao gameDao = new GameDao();
 	private PlayerController playerController = new PlayerController();
+	private ReviewController reviewController = new ReviewController();
 	private SceneController sceneController = new SceneController();
 	private Scanner scanner = new Scanner(System.in);
 	
@@ -50,8 +52,8 @@ public class GameService {
 	public void endGame() {			
 		System.out.print("Please enter your name: ");
 		player.setPlayerName(scanner.nextLine());
-		System.out.println(player);
-		System.out.println(playerController.updatePlayers(player));
+		System.out.println("\nForkazon Review\n---------------");
+		System.out.println(reviewController.getReview(player));
 	}
 	
 	public void resetGame() {

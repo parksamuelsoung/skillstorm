@@ -6,6 +6,8 @@ public class Review {
 	private int reviewRating;
 	private String reviewUser;
 	private String reviewMessage;
+	private String productDetails;
+	private String productManufacturer;
 	
 	public Review() {
 
@@ -51,10 +53,32 @@ public class Review {
 	public void setReviewMessage(String reviewMessage) {
 		this.reviewMessage = reviewMessage;
 	}
+	
+	public String getProductDetails() {
+		return productDetails;
+	}
+	
+	public void setProductDetails(String productDetails) {
+		this.productDetails = productDetails;
+	}
+	
+	public String getProductManufacturer() {
+		return productManufacturer;
+	}
+	
+	public void setProductManufacturer(String productManufacturer) {
+		this.productManufacturer = productManufacturer;
+	}
 
 	@Override
 	public String toString() {
-		return String.format("%s %s", reviewUser, reviewMessage);
+		return String.format("Manufacturer: %s's Fork Warehouse%n"
+				+ "Product: %s%n"
+				+ "Rating: %s/5 stars%n"
+				+ "Customer: %s%n"
+				+ "Comment: %s", 
+				productManufacturer, productDetails, 
+				reviewRating, reviewUser, reviewMessage);
 	}
 	
 	
