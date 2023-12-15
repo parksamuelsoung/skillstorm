@@ -19,7 +19,11 @@ public class SceneService {
 	}
 	
 	public Scene getScene(String sceneSetChoice) {
-		sceneSetId = sceneSetNumber + sceneSetChoice;
+		if (sceneSetNumber <= 9) {
+			sceneSetId = sceneSetNumber + sceneSetChoice + "-ones";
+		} else {
+			sceneSetId = sceneSetNumber + sceneSetChoice;
+		}
 		scene = sceneDao.getScene(sceneSetId);
 
 		if (!scene.getSceneCall().contains(sceneSetChoice) ||
