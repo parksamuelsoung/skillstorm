@@ -1,22 +1,22 @@
 package Tuesday;
 
-import java.util.Iterator;
 import java.util.LinkedList;
 
 public class Stack {
 
     public String reverse(String str) {
         LinkedList<Character> chars = new LinkedList<>();
-
+        String reversed = "";
 
         for (Character character : str.toCharArray()) {
             chars.push(character);
         }
-        Iterator<Character> iterator = chars.listIterator();
-        while (iterator.hasNext()) {
-            System.out.print(iterator.next());
+
+        while (!chars.isEmpty()) {
+            reversed += chars.pop().toString();
         }
-        return chars.toString();
+     
+        return reversed;
         
     }
 
