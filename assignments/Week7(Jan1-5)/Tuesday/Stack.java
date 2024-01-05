@@ -25,14 +25,16 @@ public class Stack {
         int count = 0;
 
         for (Character character : expression.toCharArray()) {
-            if (character == '(') {
-                ++count;
-            } else {
-                --count;
-            }
             parenthesis.push(character);
         }
-        return count == 0;
+
+        for (Character character1 : parenthesis) {
+            if (character1 == '(') {
+                parenthesis.pop(); 
+                count++; 
+            }
+        }
+        return count == parenthesis.size();
     }
 
 }

@@ -7,6 +7,6 @@ public class StackTest {
 
         System.out.println(stack.reverse("Hello"));
 
-        System.out.println(stack.isBalanced("())"));
+        System.out.println(stack.isBalanced("(())"));
     }
 }
