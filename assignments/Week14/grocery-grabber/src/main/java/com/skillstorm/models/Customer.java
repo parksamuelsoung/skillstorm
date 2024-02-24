@@ -25,6 +25,9 @@ public class Customer {
     @OneToMany(mappedBy = "customer")
     private List<OrderInfo> orders;
 
+    public Customer() {
+    }
+
     public Customer(long customerId, String name, String address, List<OrderInfo> orders) {
         this.customerId = customerId;
         this.name = name;

@@ -45,11 +45,11 @@ public class OrderInfo {
     }
 
     public LocalDateTime getScheduledTime() {
-        return scheduledTime;
+        return LocalDateTime.now();
     }
 
-    public void setScheduledTime(LocalDateTime scheduledTime) {
-        this.scheduledTime = scheduledTime;
+    public void setScheduledTime() {
+        this.scheduledTime = LocalDateTime.now();
     }
 
     public Customer getCustomer() {
