@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Log</title>
+    <style>
+        body {
+            font-family: 'Calibri';
+            margin-left: 50px;
+        }
+
+        form {
+            padding: 20px 0px 0px 10px;
+        }
+
+        table, th, td {
+            margin-top: 30px;
+            border: black solid 1px;
+            border-collapse: collapse;
+        }
+
+        #description {
+            padding: 20px 0px 0px 10px;
+        }
+
+        .content {
+            font-size: small;
+        }
+
+        .header {
+            margin: 5px;
+        }
+
+        .footer {
+            margin-top: 30px;
+        }
+
+        .formComponent {
+            padding: 0px 5px 5px 0px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Exercise Log</h1>
+        <h5 class="header">Week 15 - Monday HTML</h5>
+        <h5 class="header">Samuel Park</h5>
+    </header>
+    <div class="content">
+        <p id="description">
+            Hello, welcome to your personalized exercise log.
+        <ul>
+            <li>enter your name</li>
+            <li>choose the date</li>
+            <li>enter the number of reps</li>
+            <li>choose the intensity</li>
+        </ul>
+        </p>
+        <form>
+            <div class="formComponent">
+                <strong>Log your run!</strong>
+            </div>
+            <div class="formComponent">
+                <label>Name:</label>
+                <input placeholder="ex. John Doe">
+            </div>
+            <div class="formComponent">
+                <label>Date:</label>
+                <input type="date"
+            </div>
+            <div class="formComponent">
+                <label>Number of reps:</label>
+                <input type="number" min="0" max="60" placeholder="ex. 5">
+            </div>
+            <div class="formComponent">
+                <label>Workout Intensity:</label>
+                <select>
+                    <option selected disabled>Select</option>
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+            </div>
+            <div class="formComponent">
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Reps</th>
+                    <th>Intensity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sam</td>
+                    <td>02/26/2024</td>
+                    <td>8</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>Sam</td>
+                    <td>05/25/2018</td>
+                    <td>4</td>
+                    <td>Low</td>
+                </tr>
+                <tr>
+                    <td>Sam</td>
+                    <td>11/24/2009</td>
+                    <td>16</td>
+                    <td>High</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer class="footer">
+        Thank you for visiting!
+    </footer>
+</body>
+
+</html>
