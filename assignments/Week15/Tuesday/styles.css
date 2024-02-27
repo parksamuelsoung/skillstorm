@@ -1,0 +1,59 @@
+/*
+    This is the styles css file for the ExerciseLog.html file.
+*/
+
+:root {
+    --lighterblue-color: #caf0f8;
+    --lightblue-color: #ade8f4;
+    --lightgray-color: #dedede;
+}
+
+body {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+    background-repeat: no-repeat;
+    background-image: 
+        linear-gradient(to left, transparent, 1%, white),
+        url(https://img.freepik.com/free-photo/man-women-doing-crunches_23-2148285026.jpg?t=st=1709065559~exp=1709069159~hmac=6f8e9e27eee3f1f3a640df772697250e22d79efaf6cec9c5fd620fc2652d2a44&w=740);
+}
+
+form {
+    padding: 20px 0px 0px 10px;
+}
+
+table,
+th,
+td {
+    margin-top: 30px;
+    border: black solid 1px;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: var(--lightgray-color);
+}
+
+#description {
+    padding: 20px 0px 0px 10px;
+}
+
+#bottom-block {
+    background: linear-gradient(to left, transparent, 1%, white);
+    background-color: var(--lighterblue-color);
+}
+
+.content {
+    font-size: small;
+}
+
+.header {
+    margin: 5px;
+}
+
+.footer {
+    margin-top: 30px;
+}
+
+.formComponent {
+    padding: 0px 5px 5px 0px;
+}
