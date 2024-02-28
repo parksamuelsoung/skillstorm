@@ -1,0 +1,70 @@
+
+h1 {
+    display: inline;
+    margin-right: 15%;
+}
+
+body {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    margin: 50px 50px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: .3fr .3fr 3fr .3fr .3fr;
+    grid-template-areas: "nav nav"
+                         "header aside"
+                         "content aside"
+                         "subfooter aside"
+                         "footer footer";
+}
+
+nav {
+    background-color: yellow;
+    grid-area: nav;
+}
+
+header {
+    background-color: lightyellow;
+    grid-area: header;
+}
+
+#content {
+    background-color: rgba(255, 166, 0, 0.555);
+    grid-area: content;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#aside {
+    background-color: lightgoldenrodyellow;
+    grid-area: aside;
+}
+
+#subfooter {
+    background-color: lightyellow;
+    grid-area: subfooter;
+}
+
+footer {
+    background-color: yellow;
+    grid-area: footer;
+}
+
+.area {
+    padding: 10px;
+}
+
+img {
+    height: 130px;
+}
+
+table,
+th,
+td {
+    margin-top: 30px;
+    border: black solid 1px;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: var(--lightgray-color);
+}
