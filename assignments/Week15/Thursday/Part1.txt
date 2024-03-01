@@ -1,0 +1,15 @@
+
+Week 15 Thursday Assignment
+
+1. I enjoyed the sarcasm with the ninja theme! For me,
+the suggestion I want to avoid the most is the powerful function:
+"Joining several actions into one protects your code from reuse.".
+The reason I chose this one is because I tend to overcomplicate
+a single method and add to many functionalities. I've learned how
+important it is to have a clear, single, and meaningful function
+that works for a method. Something else I want to work on is 
+making sure that my variable names are explicit and not vague. I've
+noticed that explicit variable names help me jump right into the
+code I wrote and pick up where I left off. So, this also applies
+to working with other developers who may have no context or 
+reference to the code I wrote. 
