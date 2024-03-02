@@ -49,3 +49,7 @@ button {
     background-color: lightseagreen;
     color: white;
 }
+
+.hidden-element {
+    display: none;
+}
