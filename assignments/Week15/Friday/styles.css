@@ -1,0 +1,51 @@
+
+body {
+    background-color: lightcyan;
+    margin: 20px 20px;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+
+.page {
+    padding: 5px 25px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    grid-template-rows: 1fr 3fr 2fr;
+    grid-template-areas: "header header"
+                         "image description"
+                         "footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.image {
+    grid-area: image;
+}
+
+.description {
+    padding: 10px;
+    grid-area: description;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-images {
+    padding: 3px;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+button {
+    padding: 5px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightseagreen;
+    color: white;
+}
